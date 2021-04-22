@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: '[app-test]',
-  templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css']
+  selector: 'app-test',
+  template:`
+   <h2>
+   welcome {{name}}
+   </h2> 
+   `,
+ 
+  styles: [],
 })
 export class TestComponent implements OnInit {
 
@@ -12,6 +17,6 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {
   }
   
-
+public name="Arezki";
 
 }
